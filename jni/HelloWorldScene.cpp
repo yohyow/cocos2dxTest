@@ -1,3 +1,5 @@
+#include "string"
+#include "VisibleRect.h"
 #include "HelloWorldScene.h"
 #include "AppMacros.h"
 USING_NS_CC;
@@ -53,11 +55,13 @@ bool HelloWorld::init()
     /////////////////////////////
     // 3. add your codes below...
 
-    // add a label shows "Hello World"
+    // add a label shows "随便抓,不要钱"
     // create and initialize a label
+    CCDictionary *strings = CCDictionary::createWithContentsOfFile("font/chinese-simple.xml");
+    const char *charTitle = ((CCString*) strings->objectForKey("title"))->m_sString.c_str();
     
-    CCLabelTTF* pLabel = CCLabelTTF::create("Hello World", "Arial", TITLE_FONT_SIZE);
-    
+    CCLabelTTF* pLabel = CCLabelTTF::create(charTitle, "Arial", TITLE_FONT_SIZE);
+
     // position the label on the center of the screen
     pLabel->setPosition(ccp(origin.x + visibleSize.width/2,
                             origin.y + visibleSize.height - pLabel->getContentSize().height));
@@ -66,10 +70,11 @@ bool HelloWorld::init()
     this->addChild(pLabel, 1);
 
     // add "HelloWorld" splash screen"
-    CCSprite* pSprite = CCSprite::create("layout_start_background.png");
+    CCSprite* pSprite = CCSprite::create("fish_background.jpg");
 
     // position the sprite on the center of the screen
-    pSprite->setPosition(ccp(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
+//    pSprite->setPosition(ccp(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
+    pSprite->setPosition(VisibleRect::center());
 
     // add the sprite as a child to this layer
     this->addChild(pSprite, 0);
