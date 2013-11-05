@@ -86,6 +86,9 @@ obj/local/armeabi/objs-debug/game_shared/VisibleRect.o: \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/../../gabi++/include/cstddef \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/exception \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/../../gabi++/include/exception \
+ D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_cstdio.h \
+ D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stdio.h \
+ D:/android-ndk-r9/platforms/android-9/arch-arm/usr/include/../include/stdio.h \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_construct.h \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_alloc.c \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_string_fwd.h \
@@ -93,8 +96,6 @@ obj/local/armeabi/objs-debug/game_shared/VisibleRect.o: \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/char_traits.h \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_cwchar.h \
  D:/android-ndk-r9/platforms/android-9/arch-arm/usr/include/../include/wchar.h \
- D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stdio.h \
- D:/android-ndk-r9/platforms/android-9/arch-arm/usr/include/../include/stdio.h \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/time.h \
  D:/android-ndk-r9/platforms/android-9/arch-arm/usr/include/../include/time.h \
  D:/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/time.h \
@@ -334,7 +335,6 @@ obj/local/armeabi/objs-debug/game_shared/VisibleRect.o: \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/cctype \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_cctype.h \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/cstdio \
- D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_cstdio.h \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/cstdlib \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/cstring \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/cstdarg \
@@ -536,6 +536,12 @@ D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/exception:
 
 D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/../../gabi++/include/exception:
 
+D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_cstdio.h:
+
+D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stdio.h:
+
+D:/android-ndk-r9/platforms/android-9/arch-arm/usr/include/../include/stdio.h:
+
 D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_construct.h:
 
 D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_alloc.c:
@@ -549,10 +555,6 @@ D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/char_traits.h:
 D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_cwchar.h:
 
 D:/android-ndk-r9/platforms/android-9/arch-arm/usr/include/../include/wchar.h:
-
-D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stdio.h:
-
-D:/android-ndk-r9/platforms/android-9/arch-arm/usr/include/../include/stdio.h:
 
 D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/time.h:
 
@@ -1031,8 +1033,6 @@ D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/cctype:
 D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_cctype.h:
 
 D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/cstdio:
-
-D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_cstdio.h:
 
 D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/cstdlib:
 
