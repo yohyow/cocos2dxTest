@@ -1,7 +1,17 @@
 obj/local/armeabi/objs-debug/game_shared/HelloWorldScene.o: \
- jni/HelloWorldScene.cpp \
- D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/string \
- D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_prolog.h \
+ jni/HelloWorldScene.cpp jni/HelloWorldScene.h \
+ D:/android-ndk-r9/sources/cocos2dx/include/cocos2d.h \
+ D:/android-ndk-r9/sources/cocos2dx/include/ccConfig.h \
+ D:/android-ndk-r9/sources/cocos2dx/platform/CCPlatformConfig.h \
+ D:/android-ndk-r9/sources/cocos2dx/actions/CCAction.h \
+ D:/android-ndk-r9/sources/cocos2dx/cocoa/CCObject.h \
+ D:/android-ndk-r9/sources/cocos2dx/cocoa/CCDataVisitor.h \
+ D:/android-ndk-r9/sources/cocos2dx/platform/CCPlatformMacros.h \
+ D:/android-ndk-r9/sources/cocos2dx/include/ccConfig.h \
+ D:/android-ndk-r9/sources/cocos2dx/platform/CCPlatformConfig.h \
+ D:/android-ndk-r9/sources/cocos2dx/platform/android/CCPlatformDefine.h \
+ D:/android-ndk-r9/platforms/android-9/arch-arm/usr/include/android/log.h \
+ D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stdarg.h \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_cprolog.h \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/config/features.h \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_stlport_version.h \
@@ -13,6 +23,10 @@ obj/local/armeabi/objs-debug/game_shared/HelloWorldScene.o: \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/config/_gcc.h \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/config/stl_confix.h \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/config/_native_headers.h \
+ D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_epilog.h \
+ D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h \
+ D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/string \
+ D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_prolog.h \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/debug/_debug.h \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_string.h \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_alloc.h \
@@ -75,7 +89,6 @@ obj/local/armeabi/objs-debug/game_shared/HelloWorldScene.o: \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_cstdio.h \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stdio.h \
  D:/android-ndk-r9/platforms/android-9/arch-arm/usr/include/../include/stdio.h \
- D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stdarg.h \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_construct.h \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_alloc.c \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_string_fwd.h \
@@ -141,19 +154,6 @@ obj/local/armeabi/objs-debug/game_shared/HelloWorldScene.o: \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_num_get.h \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_num_get.c \
  D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_string_io.c \
- D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_epilog.h \
- D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h \
- jni/VisibleRect.h D:/android-ndk-r9/sources/cocos2dx/include/cocos2d.h \
- D:/android-ndk-r9/sources/cocos2dx/include/ccConfig.h \
- D:/android-ndk-r9/sources/cocos2dx/platform/CCPlatformConfig.h \
- D:/android-ndk-r9/sources/cocos2dx/actions/CCAction.h \
- D:/android-ndk-r9/sources/cocos2dx/cocoa/CCObject.h \
- D:/android-ndk-r9/sources/cocos2dx/cocoa/CCDataVisitor.h \
- D:/android-ndk-r9/sources/cocos2dx/platform/CCPlatformMacros.h \
- D:/android-ndk-r9/sources/cocos2dx/include/ccConfig.h \
- D:/android-ndk-r9/sources/cocos2dx/platform/CCPlatformConfig.h \
- D:/android-ndk-r9/sources/cocos2dx/platform/android/CCPlatformDefine.h \
- D:/android-ndk-r9/platforms/android-9/arch-arm/usr/include/android/log.h \
  D:/android-ndk-r9/sources/cocos2dx/cocoa/CCGeometry.h \
  D:/android-ndk-r9/sources/cocos2dx/cocoa/CCObject.h \
  D:/android-ndk-r9/sources/cocos2dx/actions/CCActionInterval.h \
@@ -361,11 +361,33 @@ obj/local/armeabi/objs-debug/game_shared/HelloWorldScene.o: \
  D:/android-ndk-r9/sources/cocos2dx/support/data_support/uthash.h \
  D:/android-ndk-r9/sources/cocos2dx/support/component/CCComponent.h \
  D:/android-ndk-r9/sources/cocos2dx/support/component/CCComponentContainer.h \
- jni/HelloWorldScene.h jni/AppMacros.h
+ jni/AppMacros.h
 
-D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/string:
+jni/HelloWorldScene.h:
 
-D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_prolog.h:
+D:/android-ndk-r9/sources/cocos2dx/include/cocos2d.h:
+
+D:/android-ndk-r9/sources/cocos2dx/include/ccConfig.h:
+
+D:/android-ndk-r9/sources/cocos2dx/platform/CCPlatformConfig.h:
+
+D:/android-ndk-r9/sources/cocos2dx/actions/CCAction.h:
+
+D:/android-ndk-r9/sources/cocos2dx/cocoa/CCObject.h:
+
+D:/android-ndk-r9/sources/cocos2dx/cocoa/CCDataVisitor.h:
+
+D:/android-ndk-r9/sources/cocos2dx/platform/CCPlatformMacros.h:
+
+D:/android-ndk-r9/sources/cocos2dx/include/ccConfig.h:
+
+D:/android-ndk-r9/sources/cocos2dx/platform/CCPlatformConfig.h:
+
+D:/android-ndk-r9/sources/cocos2dx/platform/android/CCPlatformDefine.h:
+
+D:/android-ndk-r9/platforms/android-9/arch-arm/usr/include/android/log.h:
+
+D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stdarg.h:
 
 D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_cprolog.h:
 
@@ -388,6 +410,14 @@ D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/config/_gcc.h:
 D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/config/stl_confix.h:
 
 D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/config/_native_headers.h:
+
+D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_epilog.h:
+
+D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h:
+
+D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/string:
+
+D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_prolog.h:
 
 D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/debug/_debug.h:
 
@@ -512,8 +542,6 @@ D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_cstdio.h:
 D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stdio.h:
 
 D:/android-ndk-r9/platforms/android-9/arch-arm/usr/include/../include/stdio.h:
-
-D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stdarg.h:
 
 D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_construct.h:
 
@@ -644,34 +672,6 @@ D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_num_get.h:
 D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_num_get.c:
 
 D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_string_io.c:
-
-D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_epilog.h:
-
-D:/android-ndk-r9/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h:
-
-jni/VisibleRect.h:
-
-D:/android-ndk-r9/sources/cocos2dx/include/cocos2d.h:
-
-D:/android-ndk-r9/sources/cocos2dx/include/ccConfig.h:
-
-D:/android-ndk-r9/sources/cocos2dx/platform/CCPlatformConfig.h:
-
-D:/android-ndk-r9/sources/cocos2dx/actions/CCAction.h:
-
-D:/android-ndk-r9/sources/cocos2dx/cocoa/CCObject.h:
-
-D:/android-ndk-r9/sources/cocos2dx/cocoa/CCDataVisitor.h:
-
-D:/android-ndk-r9/sources/cocos2dx/platform/CCPlatformMacros.h:
-
-D:/android-ndk-r9/sources/cocos2dx/include/ccConfig.h:
-
-D:/android-ndk-r9/sources/cocos2dx/platform/CCPlatformConfig.h:
-
-D:/android-ndk-r9/sources/cocos2dx/platform/android/CCPlatformDefine.h:
-
-D:/android-ndk-r9/platforms/android-9/arch-arm/usr/include/android/log.h:
 
 D:/android-ndk-r9/sources/cocos2dx/cocoa/CCGeometry.h:
 
@@ -1086,7 +1086,5 @@ D:/android-ndk-r9/sources/cocos2dx/support/data_support/uthash.h:
 D:/android-ndk-r9/sources/cocos2dx/support/component/CCComponent.h:
 
 D:/android-ndk-r9/sources/cocos2dx/support/component/CCComponentContainer.h:
-
-jni/HelloWorldScene.h:
 
 jni/AppMacros.h:

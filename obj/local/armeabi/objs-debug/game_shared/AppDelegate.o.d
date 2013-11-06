@@ -1,5 +1,5 @@
 obj/local/armeabi/objs-debug/game_shared/AppDelegate.o: \
- jni/AppDelegate.cpp jni/AppMacros.h \
+ jni/AppDelegate.cpp jni/AppDelegate.h \
  D:/android-ndk-r9/sources/cocos2dx/include/cocos2d.h \
  D:/android-ndk-r9/sources/cocos2dx/include/ccConfig.h \
  D:/android-ndk-r9/sources/cocos2dx/platform/CCPlatformConfig.h \
@@ -361,9 +361,10 @@ obj/local/armeabi/objs-debug/game_shared/AppDelegate.o: \
  D:/android-ndk-r9/sources/cocos2dx/support/data_support/uthash.h \
  D:/android-ndk-r9/sources/cocos2dx/support/component/CCComponent.h \
  D:/android-ndk-r9/sources/cocos2dx/support/component/CCComponentContainer.h \
- jni/AppDelegate.h jni/HelloWorldScene.h
+ jni/GameScene.h jni/GameLayer.h jni/PlaneLayer.h jni/BulletLayer.h \
+ jni/AppMacros.h
 
-jni/AppMacros.h:
+jni/AppDelegate.h:
 
 D:/android-ndk-r9/sources/cocos2dx/include/cocos2d.h:
 
@@ -1087,6 +1088,12 @@ D:/android-ndk-r9/sources/cocos2dx/support/component/CCComponent.h:
 
 D:/android-ndk-r9/sources/cocos2dx/support/component/CCComponentContainer.h:
 
-jni/AppDelegate.h:
+jni/GameScene.h:
 
-jni/HelloWorldScene.h:
+jni/GameLayer.h:
+
+jni/PlaneLayer.h:
+
+jni/BulletLayer.h:
+
+jni/AppMacros.h:

@@ -15,8 +15,11 @@ LOCAL_MODULE_FILENAME := libgame
 
 LOCAL_SRC_FILES := main.cpp \
                    AppDelegate.cpp \
-                   VisibleRect.cpp \
-                  HelloWorldScene.cpp \
+                   PlaneLayer.cpp \
+                   BulletLayer.cpp \
+                   GameLayer.cpp \
+                   GameScene.cpp 
+                   
                   
                    
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes                   
