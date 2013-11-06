@@ -31,13 +31,27 @@ void BulletLayer::addBullet() {
 	CCSpriteFrameCache* cache = CCSpriteFrameCache::sharedSpriteFrameCache();
 	CCSprite* bullet = CCSprite::createWithSpriteFrame(cache->spriteFrameByName("bullet1.png"));
 	CCPoint planePoint = PlaneLayer::sharedPlane->getChildByTag(747)->getPosition();
-	CCPoint bulletPoint = ccp(planePoint.x, planePoint.y + PlaneLayer::sharedPlane->getChildByTag(747)->getContentSize().height/2);
+	CCPoint bulletPoint = ccp(planePoint.x + 2, planePoint.y + 2 + PlaneLayer::sharedPlane->getChildByTag(747)->getContentSize().height/2);
 	bullet->setPosition(bulletPoint);
+
+	float length = CCDirector::sharedDirector()->getWinSize().height + bullet->getContentSize().height/2 - bulletPoint.y;
+	float velocity = 420/1;
+	float realMoveDuration = length / velocity;
+	CCFiniteTimeAction* actionMove=CCMoveTo::create(realMoveDuration,ccp(bulletPoint.x,CCDirector::sharedDirector()->getWinSize().height+bullet->getContentSize().height/2));
+	CCFiniteTimeAction* actionDone=CCCallFuncN::create(this,callfuncN_selector(BulletLayer::bulletMoveFinished));//回调一个子弹结束处理函数
+	CCSequence* sequence = CCSequence::create(actionMove,actionDone, NULL);
+	bullet->runAction(sequence);
+
+
 	this->_bulletBatchNode->addChild(bullet);
 }
 
 void BulletLayer::startShoot(float delay) {
-	this->schedule(schedule_selector(BulletLayer::addBullet),0.01f,kCCRepeatForever,delay);
+	this->schedule(schedule_selector(BulletLayer::addBullet),0.15f,kCCRepeatForever,delay);
+}
+
+void BulletLayer::bulletMoveFinished() {
+
 }
 
 BulletLayer::~BulletLayer() {

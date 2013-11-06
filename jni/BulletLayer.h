@@ -21,6 +21,7 @@ public:
 	CREATE_FUNC(BulletLayer);
 	void addBullet();
 	void startShoot(float delay=0.0f);
+	void bulletMoveFinished();
 
 public:
 	CCSpriteBatchNode* _bulletBatchNode;
